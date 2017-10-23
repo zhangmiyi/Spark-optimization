@@ -12,5 +12,3 @@
 2.过滤掉少数导致倾斜的Key，这些Key不参与计算了
 3.提高shuffle操作的并行度：spark.sql.shuffle.partitions，该参数代表了shuffle read task的并行度，增加task的数量，这样每一个task运行的时间就更短了
 4.两阶段聚合（局部聚合+全局聚合）
-
-是
